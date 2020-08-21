@@ -1,0 +1,727 @@
+@import url( resources/fonts/dejavu.css );
+body {
+	margin: 0px; color: rgb(53, 56, 51); font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);
+}
+a:link {
+	color: rgb(74, 103, 130); text-decoration: none;
+}
+a:visited {
+	color: rgb(74, 103, 130); text-decoration: none;
+}
+a:hover {
+	color: rgb(187, 122, 42); text-decoration: none;
+}
+a:focus {
+	color: rgb(187, 122, 42); text-decoration: none;
+}
+a:active {
+	color: rgb(74, 103, 130); text-decoration: none;
+}
+a[name] {
+	color: rgb(53, 56, 51);
+}
+a[name]:hover {
+	color: rgb(53, 56, 51); text-decoration: none;
+}
+pre {
+	font-family: "DejaVu Sans Mono", monospace; font-size: 14px;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px; font-style: italic;
+}
+h4 {
+	font-size: 13px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 11px;
+}
+ul {
+	list-style-type: disc;
+}
+code {
+	line-height: 1.4em; padding-top: 4px; font-family: "DejaVu Sans Mono", monospace; font-size: 14px; margin-top: 8px;
+}
+tt {
+	line-height: 1.4em; padding-top: 4px; font-family: "DejaVu Sans Mono", monospace; font-size: 14px; margin-top: 8px;
+}
+dt code {
+	padding-top: 4px; font-family: "DejaVu Sans Mono", monospace; font-size: 14px;
+}
+table tr td dt code {
+	padding-top: 4px; font-family: "DejaVu Sans Mono", monospace; font-size: 14px; vertical-align: top;
+}
+sup {
+	font-size: 8px;
+}
+.clear {
+	height: 0px; overflow: hidden; clear: both;
+}
+.aboutLanguage {
+	padding: 0px 21px; font-size: 11px; margin-top: -9px; float: right; z-index: 200;
+}
+.legalCopy {
+	margin-left: 0.5em;
+}
+.bar a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.bar a:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.bar a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.bar a:active {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.bar a:hover {
+	color: rgb(187, 122, 42);
+}
+.bar a:focus {
+	color: rgb(187, 122, 42);
+}
+.tab {
+	padding: 8px; width: 5em; color: rgb(255, 255, 255); font-weight: bold; background-color: rgb(0, 102, 255);
+}
+.bar {
+	margin: 0px; padding: 0.8em 0.5em 0.4em 0.8em; height: auto; color: rgb(255, 255, 255); font-size: 11px; background-color: rgb(77, 122, 151);
+}
+.topNav {
+	padding: 10px 0px 0px; width: 100%; height: 2.8em; color: rgb(255, 255, 255); overflow: hidden; clear: right; font-size: 12px; float: left; background-color: rgb(77, 122, 151);
+}
+.bottomNav {
+	padding: 10px 0px 0px; width: 100%; height: 2.8em; color: rgb(255, 255, 255); overflow: hidden; clear: right; font-size: 12px; margin-top: 10px; float: left; background-color: rgb(77, 122, 151);
+}
+.subNav {
+	width: 100%; overflow: hidden; font-size: 12px; float: left; background-color: rgb(222, 227, 233);
+}
+.subNav div {
+	padding: 0px 0px 5px 6px; text-transform: uppercase; clear: left; float: left;
+}
+ul.navList {
+	margin: 0px 25px 0px 0px; padding: 0px; float: left;
+}
+ul.subNavList {
+	margin: 0px 25px 0px 0px; padding: 0px; float: left;
+}
+ul.navList li {
+	list-style: none; padding: 5px 6px; text-transform: uppercase; float: left;
+}
+ul.subNavList li {
+	list-style: none; float: left;
+}
+.topNav a:link {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.topNav a:active {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.topNav a:visited {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.bottomNav a:link {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.bottomNav a:active {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.bottomNav a:visited {
+	color: rgb(255, 255, 255); text-transform: uppercase; text-decoration: none;
+}
+.topNav a:hover {
+	color: rgb(187, 122, 42); text-transform: uppercase; text-decoration: none;
+}
+.bottomNav a:hover {
+	color: rgb(187, 122, 42); text-transform: uppercase; text-decoration: none;
+}
+.navBarCell1Rev {
+	margin: auto 5px; color: rgb(37, 52, 65); background-color: rgb(248, 152, 29);
+}
+.skipNav {
+	left: -9999px; top: auto; overflow: hidden; position: absolute;
+}
+.header {
+	margin: 0px 20px; padding: 5px 0px 0px; clear: both;
+}
+.footer {
+	margin: 0px 20px; padding: 5px 0px 0px; clear: both;
+}
+.indexHeader {
+	margin: 10px; position: relative;
+}
+.indexHeader span {
+	margin-right: 15px;
+}
+.indexHeader h1 {
+	font-size: 13px;
+}
+.title {
+	margin: 10px 0px; color: rgb(44, 69, 87);
+}
+.subTitle {
+	margin: 5px 0px 0px;
+}
+.header ul {
+	margin: 0px 0px 15px; padding: 0px;
+}
+.footer ul {
+	margin: 20px 0px 5px;
+}
+.header ul li {
+	list-style: none; font-size: 13px;
+}
+.footer ul li {
+	list-style: none; font-size: 13px;
+}
+div.details ul.blockList ul.blockList ul.blockList li.blockList h4 {
+	margin: 0px 0px 6px -8px; padding: 7px 5px; border: 1px solid rgb(208, 217, 224); border-image: none; background-color: rgb(222, 227, 233);
+}
+div.details ul.blockList ul.blockList ul.blockListLast li.blockList h4 {
+	margin: 0px 0px 6px -8px; padding: 7px 5px; border: 1px solid rgb(208, 217, 224); border-image: none; background-color: rgb(222, 227, 233);
+}
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+	margin: 0px 0px 6px -8px; padding: 7px 5px; border: 1px solid rgb(208, 217, 224); border-image: none; background-color: rgb(222, 227, 233);
+}
+ul.blockList ul.blockList li.blockList h3 {
+	margin: 15px 0px; padding: 0px;
+}
+ul.blockList li.blockList h2 {
+	padding: 0px 0px 20px;
+}
+.contentContainer {
+	padding: 10px 20px; clear: both; position: relative;
+}
+.sourceContainer {
+	padding: 10px 20px; clear: both; position: relative;
+}
+.classUseContainer {
+	padding: 10px 20px; clear: both; position: relative;
+}
+.serializedFormContainer {
+	padding: 10px 20px; clear: both; position: relative;
+}
+.constantValuesContainer {
+	padding: 10px 20px; clear: both; position: relative;
+}
+.indexContainer {
+	margin: 10px; font-size: 12px; position: relative;
+}
+.indexContainer h2 {
+	padding: 0px 0px 3px; font-size: 13px;
+}
+.indexContainer ul {
+	margin: 0px; padding: 0px;
+}
+.indexContainer ul li {
+	list-style: none; padding-top: 2px;
+}
+.contentContainer .description dl dt {
+	margin: 10px 0px 0px; color: rgb(78, 78, 78); font-size: 12px; font-weight: bold;
+}
+.contentContainer .details dl dt {
+	margin: 10px 0px 0px; color: rgb(78, 78, 78); font-size: 12px; font-weight: bold;
+}
+.serializedFormContainer dl dt {
+	margin: 10px 0px 0px; color: rgb(78, 78, 78); font-size: 12px; font-weight: bold;
+}
+.contentContainer .description dl dd {
+	margin: 5px 0px 10px; font-family: "DejaVu Sans Mono",monospace; font-size: 14px;
+}
+.contentContainer .details dl dd {
+	margin: 5px 0px 10px; font-family: "DejaVu Sans Mono",monospace; font-size: 14px;
+}
+.serializedFormContainer dl dd {
+	margin: 5px 0px 10px; font-family: "DejaVu Sans Mono",monospace; font-size: 14px;
+}
+.serializedFormContainer dl.nameValue dt {
+	font-size: 1.1em; font-weight: bold; margin-left: 1px; display: inline;
+}
+.serializedFormContainer dl.nameValue dd {
+	margin: 0px 0px 0px 1px; font-size: 1.1em; display: inline;
+}
+ul.horizontal li {
+	font-size: 0.9em; display: inline;
+}
+ul.inheritance {
+	margin: 0px; padding: 0px;
+}
+ul.inheritance li {
+	list-style: none; display: inline;
+}
+ul.inheritance li ul.inheritance {
+	padding-top: 1px; padding-left: 15px; margin-left: 15px;
+}
+ul.blockList {
+	margin: 10px 0px; padding: 0px;
+}
+ul.blockListLast {
+	margin: 10px 0px; padding: 0px;
+}
+ul.blockList li.blockList {
+	list-style: none; line-height: 1.4; margin-bottom: 15px;
+}
+ul.blockListLast li.blockList {
+	list-style: none; line-height: 1.4; margin-bottom: 15px;
+}
+ul.blockList ul.blockList li.blockList {
+	padding: 0px 20px 5px 10px; border: 1px solid rgb(237, 237, 237); border-image: none; background-color: rgb(248, 248, 248);
+}
+ul.blockList ul.blockListLast li.blockList {
+	padding: 0px 20px 5px 10px; border: 1px solid rgb(237, 237, 237); border-image: none; background-color: rgb(248, 248, 248);
+}
+ul.blockList ul.blockList ul.blockList li.blockList {
+	padding: 0px 0px 5px 8px; border: currentColor; border-image: none; background-color: rgb(255, 255, 255);
+}
+ul.blockList ul.blockList ul.blockListLast li.blockList {
+	padding: 0px 0px 5px 8px; border: currentColor; border-image: none; background-color: rgb(255, 255, 255);
+}
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockList {
+	border: currentColor; border-image: none; padding-bottom: 15px; padding-left: 0px; margin-left: 0px;
+}
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockListLast {
+	list-style: none; padding-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+table tr td dl {
+	margin-top: 0px; margin-bottom: 1px;
+}
+table tr td dl dt {
+	margin-top: 0px; margin-bottom: 1px;
+}
+table tr td dl dd {
+	margin-top: 0px; margin-bottom: 1px;
+}
+.overviewSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.memberSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.typeSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.useSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.constantsSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.deprecatedSummary {
+	width: 100%; border-right-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.overviewSummary {
+	padding: 0px;
+}
+.memberSummary {
+	padding: 0px;
+}
+.overviewSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.memberSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.typeSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.useSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.constantsSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.deprecatedSummary caption {
+	margin: 0px; padding: 10px 0px 0px 1px; text-align: left; color: rgb(37, 52, 65); overflow: hidden; clear: none; font-weight: bold; white-space: pre; position: relative; background-repeat: no-repeat;
+}
+.overviewSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.memberSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.typeSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.useSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.constantsSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.deprecatedSummary caption a:link {
+	color: rgb(255, 255, 255);
+}
+.overviewSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.memberSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.typeSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.useSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.constantsSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.deprecatedSummary caption a:hover {
+	color: rgb(255, 255, 255);
+}
+.overviewSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.memberSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.typeSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.useSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.constantsSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.deprecatedSummary caption a:active {
+	color: rgb(255, 255, 255);
+}
+.overviewSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.memberSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.typeSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.useSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.constantsSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.deprecatedSummary caption a:visited {
+	color: rgb(255, 255, 255);
+}
+.overviewSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.memberSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.typeSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.useSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.constantsSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.deprecatedSummary caption span {
+	padding: 5px 12px 7px; border: currentColor; border-image: none; height: 16px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.memberSummary caption span.activeTableTab span {
+	height: 16px; padding-top: 5px; padding-right: 12px; padding-left: 12px; margin-right: 3px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(248, 152, 29);
+}
+.memberSummary caption span.tableTab span {
+	height: 16px; padding-top: 5px; padding-right: 12px; padding-left: 12px; margin-right: 3px; float: left; display: inline-block; white-space: nowrap; background-color: rgb(77, 122, 151);
+}
+.memberSummary caption span.tableTab {
+	padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: inline; background-image: none;
+}
+.memberSummary caption span.activeTableTab {
+	padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: inline; background-image: none;
+}
+.overviewSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.memberSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.typeSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.useSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.constantsSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.deprecatedSummary .tabEnd {
+	width: 5px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.memberSummary .activeTableTab .tabEnd {
+	width: 5px; margin-right: 3px; float: left; display: none; position: relative; background-color: rgb(248, 152, 29);
+}
+.memberSummary .tableTab .tabEnd {
+	width: 5px; margin-right: 3px; float: left; display: none; position: relative; background-color: rgb(77, 122, 151);
+}
+.overviewSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+.memberSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+.typeSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+.useSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+.constantsSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+.deprecatedSummary td {
+	padding: 0px 0px 12px 10px; text-align: left;
+}
+th.colOne {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+th.colFirst {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+th.colLast {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+.useSummary th {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+.constantsSummary th {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+td.colOne {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+td.colFirst {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+td.colLast {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+.useSummary td {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+.constantsSummary td {
+	padding-top: 8px; padding-right: 0px; padding-bottom: 3px; vertical-align: top;
+}
+th.colFirst {
+	background: rgb(222, 227, 233); padding: 8px 3px 3px 7px; text-align: left;
+}
+th.colLast {
+	background: rgb(222, 227, 233); padding: 8px 3px 3px 7px; text-align: left;
+}
+th.colOne {
+	background: rgb(222, 227, 233); padding: 8px 3px 3px 7px; text-align: left;
+}
+.constantsSummary th {
+	background: rgb(222, 227, 233); padding: 8px 3px 3px 7px; text-align: left;
+}
+td.colFirst {
+	font-size: 13px; white-space: nowrap;
+}
+th.colFirst {
+	font-size: 13px; white-space: nowrap;
+}
+td.colLast {
+	font-size: 13px;
+}
+th.colLast {
+	font-size: 13px;
+}
+td.colOne {
+	font-size: 13px;
+}
+th.colOne {
+	font-size: 13px;
+}
+.overviewSummary td.colFirst {
+	width: 25%; vertical-align: top;
+}
+.overviewSummary th.colFirst {
+	width: 25%; vertical-align: top;
+}
+.useSummary td.colFirst {
+	width: 25%; vertical-align: top;
+}
+.useSummary th.colFirst {
+	width: 25%; vertical-align: top;
+}
+.overviewSummary td.colOne {
+	width: 25%; vertical-align: top;
+}
+.overviewSummary th.colOne {
+	width: 25%; vertical-align: top;
+}
+.memberSummary td.colFirst {
+	width: 25%; vertical-align: top;
+}
+.memberSummary th.colFirst {
+	width: 25%; vertical-align: top;
+}
+.memberSummary td.colOne {
+	width: 25%; vertical-align: top;
+}
+.memberSummary th.colOne {
+	width: 25%; vertical-align: top;
+}
+.typeSummary td.colFirst {
+	width: 25%; vertical-align: top;
+}
+td.colOne a:link {
+	font-weight: bold;
+}
+td.colOne a:active {
+	font-weight: bold;
+}
+td.colOne a:visited {
+	font-weight: bold;
+}
+td.colOne a:hover {
+	font-weight: bold;
+}
+td.colFirst a:link {
+	font-weight: bold;
+}
+td.colFirst a:active {
+	font-weight: bold;
+}
+td.colFirst a:visited {
+	font-weight: bold;
+}
+td.colFirst a:hover {
+	font-weight: bold;
+}
+td.colLast a:link {
+	font-weight: bold;
+}
+td.colLast a:active {
+	font-weight: bold;
+}
+td.colLast a:visited {
+	font-weight: bold;
+}
+td.colLast a:hover {
+	font-weight: bold;
+}
+.constantValuesContainer td a:link {
+	font-weight: bold;
+}
+.constantValuesContainer td a:active {
+	font-weight: bold;
+}
+.constantValuesContainer td a:visited {
+	font-weight: bold;
+}
+.constantValuesContainer td a:hover {
+	font-weight: bold;
+}
+.tableSubHeadingColor {
+	background-color: rgb(238, 238, 255);
+}
+.altColor {
+	background-color: rgb(255, 255, 255);
+}
+.rowColor {
+	background-color: rgb(238, 238, 239);
+}
+.description pre {
+	margin-top: 0px;
+}
+.deprecatedContent {
+	margin: 0px; padding: 10px 0px;
+}
+.docSummary {
+	padding: 0px;
+}
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+	font-style: normal;
+}
+div.block {
+	font-family: "DejaVu Serif", Georgia, "Times New Roman", Times, serif; font-size: 14px;
+}
+td.colLast div {
+	padding-top: 0px;
+}
+td.colLast a {
+	padding-bottom: 3px;
+}
+.sourceLineNo {
+	padding: 0px 30px 0px 0px; color: green;
+}
+h1.hidden {
+	overflow: hidden; font-size: 10px; visibility: hidden;
+}
+.block {
+	margin: 3px 10px 2px 0px; color: rgb(71, 71, 71); display: block;
+}
+.deprecatedLabel {
+	font-weight: bold;
+}
+.descfrmTypeLabel {
+	font-weight: bold;
+}
+.memberNameLabel {
+	font-weight: bold;
+}
+.memberNameLink {
+	font-weight: bold;
+}
+.overrideSpecifyLabel {
+	font-weight: bold;
+}
+.packageHierarchyLabel {
+	font-weight: bold;
+}
+.paramLabel {
+	font-weight: bold;
+}
+.returnLabel {
+	font-weight: bold;
+}
+.seeLabel {
+	font-weight: bold;
+}
+.simpleTagLabel {
+	font-weight: bold;
+}
+.throwsLabel {
+	font-weight: bold;
+}
+.typeNameLabel {
+	font-weight: bold;
+}
+.typeNameLink {
+	font-weight: bold;
+}
+.deprecationComment {
+	font-style: italic;
+}
+.emphasizedPhrase {
+	font-style: italic;
+}
+.interfaceName {
+	font-style: italic;
+}
+div.block div.block span.deprecationComment {
+	font-style: normal;
+}
+div.block div.block span.emphasizedPhrase {
+	font-style: normal;
+}
+div.block div.block span.interfaceName {
+	font-style: normal;
+}
+div.contentContainer ul.blockList li.blockList h2 {
+	padding-bottom: 0px;
+}
